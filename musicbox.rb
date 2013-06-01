@@ -28,6 +28,13 @@ class Musicbox
   end
 
   def turn_off
+    if @turned_on
+      puts "Box was turned on"
+      @turned_on = false
+    else
+      puts "Box was turned off"
+    end
+
   end
 
   def search song_name
